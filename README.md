@@ -1,6 +1,6 @@
 # Do You Know Me Quiz
 
-This a quiz with a few questions on me. 
+This is a quiz with a few questions on me. 
 
 Find out how well do you know me and let me know how you fared. 
 
