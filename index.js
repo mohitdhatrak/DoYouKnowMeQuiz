@@ -15,6 +15,7 @@ function quiz(question, answer) {
  }
  else {
    console.log(chalk.red("That's wrong :("));
+   console.log(chalk.green("The correct answer is", answer));
  }
   console.log(chalk.blue("score =", score));
   console.log("-------------------------------------------");
@@ -23,24 +24,44 @@ function quiz(question, answer) {
 
 var questionBank = [
   {
-    question: "What is my age? ",
+    question: "Q.1) What is my age? ",
     answer: "18"
   }, 
   {
-    question: "What's my Birthplace? (Name the city) ",
+    question: "Q.2) What's my Birthplace? (Name the city) ",
     answer: "Mumbai"
   }, 
   {
-    question: "What is the name of my first school/nursery? ",
+    question: "Q.3) What is the name of my first school/nursery? ",
     answer: "Jai Nursery"
   },
   {
-    question: "Which sport do I like the most? ",
+    question: "Q.4) Which sport do I like the most? ",
     answer: "Cricket"
   },
   {
-    question: "What is my favourite food dish? ",
+    question: "Q.5) What is my favourite food dish? ",
     answer: "Chicken Biryani" 
+  },
+  {
+    question: "Q.6) What is my mother tongue? ",
+    answer: "Marathi" 
+  },
+  {
+    question: "Q.7) Which format in cricket do I like the most, T20, ODI or Test cricket? ",
+    answer: "Test cricket"
+  },
+  {
+    question: "Q.8) Out of summer, winter and rainy, which season do I like the most? ",
+    answer: "Summer" 
+  },
+  {
+    question: "Q.9) Which is my favourite PC game, GTA: San Andreas, CS: GO, Call of Duty 4: Modern Warfare, Cricket 07 ? ",
+    answer: "GTA: San Andreas" 
+  },
+  {
+    question: "Q.10) Which subject do i hate the most, mathematics, physics or chemistry? ",
+    answer: "Chemistry" 
   }
 ];
 
@@ -48,21 +69,21 @@ for(var i = 0; i < questionBank.length; i++) {
   quiz(questionBank[i].question, questionBank[i].answer); 
 }
 
-console.log(chalk.magenta("Your Final score is", score + " out of 5"));
+console.log(chalk.magenta("Your Final score is", score + " out of 10"));
 console.log("  ");
 console.log(chalk.cyan("Here is the Leaderboard - ")); 
 var leaderBoard = [
   {
     name: "Mohit ",
-    score: 5
-  },
-  {
-    name: "Rohit ",
-    score: 4
+    score: 10
   },
   {
     name: "Chitra ",
-    score: 4
+    score: 9
+  },
+  {
+    name: "Rohit ",
+    score: 9
   }
 ];
 
